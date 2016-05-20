@@ -88,12 +88,12 @@ RCT_EXPORT_METHOD(cropImageWithUrlAndAspect:(NSString *)imageUrl
     TOCropViewController *cropViewController = [[TOCropViewController alloc] initWithImage:image];
     cropViewController.delegate = self;
 
+    cropViewController.rotateButtonsHidden = YES;
+
     if(self.aspectRatio) {
-        cropViewController.lockedAspectRatio = YES;
+        cropViewController.aspectRatioLocked = YES;
         cropViewController.defaultAspectRatio = self.aspectRatio;
     }
-
-    cropViewController.rotateButtonsHidden = YES;
 
     dispatch_async(dispatch_get_main_queue(), ^{
         [root presentViewController:cropViewController animated:YES completion:nil];
