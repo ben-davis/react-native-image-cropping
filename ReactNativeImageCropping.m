@@ -20,6 +20,7 @@ RCT_ENUM_CONVERTER(TOCropViewControllerAspectRatio, (@{
                  @"AspectRatio4x3" : @(TOCropViewControllerAspectRatio4x3),
                  @"AspectRatio5x4" : @(TOCropViewControllerAspectRatio5x4),
                  @"AspectRatio7x5" : @(TOCropViewControllerAspectRatio7x5),
+                @"AspectRatio9x16" : @(TOCropViewControllerAspectRatio9x16)
                 @"AspectRatio16x9" : @(TOCropViewControllerAspectRatio16x9)
                 }), UIStatusBarAnimationNone, integerValue)
 @end
@@ -41,6 +42,7 @@ RCT_EXPORT_MODULE()
         @"AspectRatio4x3" : @(TOCropViewControllerAspectRatio4x3),
         @"AspectRatio5x4" : @(TOCropViewControllerAspectRatio5x4),
         @"AspectRatio7x5" : @(TOCropViewControllerAspectRatio7x5),
+       @"AspectRatio9x16" : @(TOCropViewControllerAspectRatio9x16),
        @"AspectRatio16x9" : @(TOCropViewControllerAspectRatio16x9),
     };
 }
