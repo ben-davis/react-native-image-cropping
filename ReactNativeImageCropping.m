@@ -138,6 +138,5 @@ RCT_EXPORT_METHOD(cropImageWithUrlAndAspect:(NSString *)imageUrl
     dispatch_async(dispatch_get_main_queue(), ^{
         [cropViewController dismissViewControllerAnimated:YES completion:nil];
     });
-    self._reject(@"400", @"Cancelled", [NSError errorWithDomain:@"Cancelled" code:400 userInfo:NULL]);
 }
 @end
